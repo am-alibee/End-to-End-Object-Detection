@@ -1,0 +1,40 @@
+# Core utilities
+dill==0.3.5.1
+from-root==1.0.2
+
+# Web API
+flask
+flask-cors
+
+# AWS (runtime)
+boto3
+
+# YOLO / ML core (CPU)
+torch>=1.8.0
+torchvision>=0.9.0
+ultralytics>=8.2.64
+
+# Scientific stack
+numpy<2
+scipy
+pandas
+matplotlib
+seaborn
+
+# Image & system
+opencv-python<4.9
+pillow
+psutil
+
+# Config / IO
+PyYAML
+requests
+tqdm
+
+# Packaging & security (important for CI/CD)
+packaging
+setuptools>=70.0.0
+urllib3>=2.6.0 ; python_version > "3.8"
+
+# Local project
+-e .
