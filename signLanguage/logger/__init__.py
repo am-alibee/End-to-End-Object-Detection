@@ -1,19 +1,25 @@
 import logging
 import os
 from datetime import datetime
-from from_root import from_root
+from pathlib import Path
 
+# Project root = End-to-End-Object-Detection
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+LOG_DIR = PROJECT_ROOT / "log"
+LOG_DIR.mkdir(exist_ok=True)
 
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+LOG_FILE_PATH = LOG_DIR / LOG_FILE
 
-log_path = os.path.join(from_root(), 'log', LOG_FILE)
-
-os.makedirs(log_path, exist_ok=True)
-
-lOG_FILE_PATH = os.path.join(log_path, LOG_FILE)
-
+# Configure logger
 logging.basicConfig(
-    filename=lOG_FILE_PATH,
-    format= "[ %(asctime)s ] %(name)s - %(levelname)s - %(message)s",
-    level= logging.INFO
+    level=logging.INFO,
+    format="[ %(asctime)s ] %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler(LOG_FILE_PATH),
+        logging.StreamHandler()
+    ]
 )
+
+logging.info(f"Logging initialized. Log file: {LOG_FILE_PATH}")
