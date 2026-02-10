@@ -11,3 +11,29 @@ DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 
 DATA_DOWNLOAD_URL: str = "https://github.com/am-alibee/End-to-End-Object-Detection/raw/refs/heads/main/signLanguage.zip"
+
+
+"""
+Data Validation related Constant start with DATA_VALIDATION VAR NAME
+"""
+
+DATA_VALIDATION_DIR_NAME: str = "data_validation"
+
+DATA_VALIDATION_STAUS_FILE: str = "staus.txt"
+
+DATA_VALIDATION_ALL_REQUIRED_FILES: list = ["train", "valid", "data.yaml"]
+
+
+
+"""
+MODEL TRAINER related constant start with MODEL_TRAINER var name
+"""
+MODEL_TRAINER_DIR_NAME: str = "model_trainer"
+
+MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "yolov5s.pt"
+
+MODEL_TRAINER_EPOCHS: int = 1
+
+MODEL_TRAINER_BATCH_SIZE: int = 16
+
+

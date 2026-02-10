@@ -1,0 +1,7 @@
+range:
+  min: 1
+  max: 10
+
+guesses: 3
+
+mode: single

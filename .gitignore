@@ -208,3 +208,5 @@ __marimo__/
 
 CollectedImages/*
 artifacts/*
+yolov5/
+valid/
