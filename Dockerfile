@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.10-slim-bookworm
 
 # Install only what's needed and clean up to reduce image size
 RUN apt-get update -y \
