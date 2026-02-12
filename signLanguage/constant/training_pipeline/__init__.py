@@ -19,7 +19,7 @@ Data Validation related Constant start with DATA_VALIDATION VAR NAME
 
 DATA_VALIDATION_DIR_NAME: str = "data_validation"
 
-DATA_VALIDATION_STAUS_FILE: str = "staus.txt"
+DATA_VALIDATION_STAUS_FILE: str = "status.txt"
 
 DATA_VALIDATION_ALL_REQUIRED_FILES: list = ["train", "valid", "data.yaml"]
 
@@ -34,6 +34,12 @@ MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "yolov5s.pt"
 
 MODEL_TRAINER_EPOCHS: int = 1
 
-MODEL_TRAINER_BATCH_SIZE: int = 16
+MODEL_TRAINER_BATCH_SIZE: int = 8
 
+
+"""
+MODEL PUSHER related constant start with MODEL_PUSHER var name
+"""
+BUCKET_NAME = "sign-language-s3-bucket"
+S3_MODEL_NAME = "best.pt"
 

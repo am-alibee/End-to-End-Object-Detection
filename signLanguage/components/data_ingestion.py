@@ -10,7 +10,7 @@ from signLanguage.entity.artifacts_entity import DataIngestionArtifact
 
 
 class DataIngestion:
-    def __init__(self, data_ingestion_config: DataIngestionConfig = DataIngestionConfig()):
+    def __init__(self, data_ingestion_config: DataIngestionConfig = DataIngestionConfig):
         try:
             self.data_ingestion_config = data_ingestion_config
         except Exception as e:

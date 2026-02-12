@@ -1,0 +1,8 @@
+stages:
+  data_ingestion:
+
+  data_validation
+
+  model_trainer
+
+  model_pusher
